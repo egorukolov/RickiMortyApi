@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		5690F76F2C4109C9008440F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5690F76E2C4109C9008440F5 /* AppDelegate.swift */; };
 		5690F7712C4109C9008440F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5690F7702C4109C9008440F5 /* SceneDelegate.swift */; };
-		5690F7732C4109C9008440F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5690F7722C4109C9008440F5 /* ViewController.swift */; };
+		5690F7732C4109C9008440F5 /* CharacterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5690F7722C4109C9008440F5 /* CharacterDetailsViewController.swift */; };
 		5690F7762C4109C9008440F5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5690F7752C4109C9008440F5 /* Base */; };
 		5690F7782C4109CB008440F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5690F7772C4109CB008440F5 /* Assets.xcassets */; };
 		5690F77B2C4109CB008440F5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5690F77A2C4109CB008440F5 /* Base */; };
+		5690F7892C410ABC008440F5 /* CharactersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5690F7882C410ABC008440F5 /* CharactersTableViewController.swift */; };
+		5690F78B2C410C00008440F5 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5690F78A2C410C00008440F5 /* Character.swift */; };
+		5690F78D2C410F12008440F5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5690F78C2C410F12008440F5 /* NetworkManager.swift */; };
+		9896A3C4550C3C3B20AEF825 /* Pods_RickiMortyApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120F1571526AF6D38B203E21 /* Pods_RickiMortyApi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		120F1571526AF6D38B203E21 /* Pods_RickiMortyApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RickiMortyApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16902A908FA9CCF245EB1666 /* Pods-RickiMortyApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickiMortyApi.release.xcconfig"; path = "Target Support Files/Pods-RickiMortyApi/Pods-RickiMortyApi.release.xcconfig"; sourceTree = "<group>"; };
 		5690F76B2C4109C9008440F5 /* RickiMortyApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickiMortyApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5690F76E2C4109C9008440F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5690F7702C4109C9008440F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5690F7722C4109C9008440F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5690F7722C4109C9008440F5 /* CharacterDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewController.swift; sourceTree = "<group>"; };
 		5690F7752C4109C9008440F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5690F7772C4109CB008440F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5690F77A2C4109CB008440F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5690F77C2C4109CB008440F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5690F7882C410ABC008440F5 /* CharactersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharactersTableViewController.swift; path = RickiMortyApi/Storyboards/CharactersTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		5690F78A2C410C00008440F5 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		5690F78C2C410F12008440F5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		921FC03D902DE4491C988B8A /* Pods-RickiMortyApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickiMortyApi.debug.xcconfig"; path = "Target Support Files/Pods-RickiMortyApi/Pods-RickiMortyApi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9896A3C4550C3C3B20AEF825 /* Pods_RickiMortyApi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A6BBE3530A957EA7E299FA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				921FC03D902DE4491C988B8A /* Pods-RickiMortyApi.debug.xcconfig */,
+				16902A908FA9CCF245EB1666 /* Pods-RickiMortyApi.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4065E2DB1CED48DCBCB8DE74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				120F1571526AF6D38B203E21 /* Pods_RickiMortyApi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5690F7622C4109C9008440F5 = {
 			isa = PBXGroup;
 			children = (
 				5690F76D2C4109C9008440F5 /* RickiMortyApi */,
 				5690F76C2C4109C9008440F5 /* Products */,
+				1A6BBE3530A957EA7E299FA6 /* Pods */,
+				4065E2DB1CED48DCBCB8DE74 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +87,66 @@
 		5690F76D2C4109C9008440F5 /* RickiMortyApi */ = {
 			isa = PBXGroup;
 			children = (
-				5690F76E2C4109C9008440F5 /* AppDelegate.swift */,
-				5690F7702C4109C9008440F5 /* SceneDelegate.swift */,
-				5690F7722C4109C9008440F5 /* ViewController.swift */,
-				5690F7742C4109C9008440F5 /* Main.storyboard */,
-				5690F7772C4109CB008440F5 /* Assets.xcassets */,
-				5690F7792C4109CB008440F5 /* LaunchScreen.storyboard */,
-				5690F77C2C4109CB008440F5 /* Info.plist */,
+				5690F7822C4109E1008440F5 /* ViewControllers */,
+				5690F7852C410A37008440F5 /* Storyboards */,
+				5690F7862C410A52008440F5 /* Models */,
+				5690F7872C410A72008440F5 /* NetworkManagers */,
+				5690F7842C410A02008440F5 /* SupportingFiles */,
+				5690F7832C4109F0008440F5 /* Sources */,
 			);
 			path = RickiMortyApi;
+			sourceTree = "<group>";
+		};
+		5690F7822C4109E1008440F5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5690F7882C410ABC008440F5 /* CharactersTableViewController.swift */,
+				5690F7722C4109C9008440F5 /* CharacterDetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5690F7832C4109F0008440F5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5690F7772C4109CB008440F5 /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5690F7842C410A02008440F5 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5690F76E2C4109C9008440F5 /* AppDelegate.swift */,
+				5690F7702C4109C9008440F5 /* SceneDelegate.swift */,
+				5690F77C2C4109CB008440F5 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		5690F7852C410A37008440F5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5690F7742C4109C9008440F5 /* Main.storyboard */,
+				5690F7792C4109CB008440F5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5690F7862C410A52008440F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5690F78A2C410C00008440F5 /* Character.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5690F7872C410A72008440F5 /* NetworkManagers */ = {
+			isa = PBXGroup;
+			children = (
+				5690F78C2C410F12008440F5 /* NetworkManager.swift */,
+			);
+			path = NetworkManagers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5690F77F2C4109CB008440F5 /* Build configuration list for PBXNativeTarget "RickiMortyApi" */;
 			buildPhases = (
+				CA0C824F28114165668FD652 /* [CP] Check Pods Manifest.lock */,
 				5690F7672C4109C9008440F5 /* Sources */,
 				5690F7682C4109C9008440F5 /* Frameworks */,
 				5690F7692C4109C9008440F5 /* Resources */,
+				0078032B668AFD5E40F0475F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +217,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0078032B668AFD5E40F0475F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RickiMortyApi/Pods-RickiMortyApi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RickiMortyApi/Pods-RickiMortyApi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RickiMortyApi/Pods-RickiMortyApi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA0C824F28114165668FD652 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RickiMortyApi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5690F7672C4109C9008440F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5690F7732C4109C9008440F5 /* ViewController.swift in Sources */,
+				5690F78D2C410F12008440F5 /* NetworkManager.swift in Sources */,
+				5690F7732C4109C9008440F5 /* CharacterDetailsViewController.swift in Sources */,
+				5690F7892C410ABC008440F5 /* CharactersTableViewController.swift in Sources */,
+				5690F78B2C410C00008440F5 /* Character.swift in Sources */,
 				5690F76F2C4109C9008440F5 /* AppDelegate.swift in Sources */,
 				5690F7712C4109C9008440F5 /* SceneDelegate.swift in Sources */,
 			);
@@ -287,6 +416,7 @@
 		};
 		5690F7802C4109CB008440F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 921FC03D902DE4491C988B8A /* Pods-RickiMortyApi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,7 +424,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 48X7U22M49;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RickiMortyApi/Info.plist;
+				INFOPLIST_FILE = RickiMortyApi/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -307,14 +437,19 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.egorukolov.RickiMortyApi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		5690F7812C4109CB008440F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16902A908FA9CCF245EB1666 /* Pods-RickiMortyApi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,7 +457,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 48X7U22M49;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RickiMortyApi/Info.plist;
+				INFOPLIST_FILE = RickiMortyApi/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -335,9 +470,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.egorukolov.RickiMortyApi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
