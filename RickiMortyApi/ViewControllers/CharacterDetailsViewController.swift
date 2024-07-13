@@ -18,11 +18,39 @@ class CharacterDetailsViewController: UIViewController {
     @IBOutlet var typeLabel: UILabel!
     @IBOutlet var genderLabel: UILabel!
     
+    var character: Character?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        typeLabel.numberOfLines = 2
+        
+        activityIndicator.startAnimating()
+        activityIndicator.hidesWhenStopped = true
+        
+        uploadUI()
     }
 
-
+    func uploadUI() {
+        
+        idLabel.text = "ID: \(String(character!.id))"
+        nameLabel.text = "Name: \(character?.name ?? "nill")"
+        statusLabel.text = "Status: \(character?.status ?? "nill")"
+        speciesLabel.text = "Species: \(character?.species ?? "nill")"
+        typeLabel.text = "Type: \(character?.type ?? "nill")"
+        genderLabel.text = "Gender: \(character?.gender ?? "nill")"
+        
+        NetworkManager.shared.fetchImage(urlString: character?.image ?? "nill") { result in
+            switch result {
+            case .success(let image):
+                DispatchQueue.main.async {
+                    self.imageView.image = UIImage(data: image)
+                    self.activityIndicator.stopAnimating()
+                }
+            case .failure(let error):
+                break
+            }
+        }
+    }
 }
 

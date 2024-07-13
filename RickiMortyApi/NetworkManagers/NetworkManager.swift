@@ -10,7 +10,7 @@ import Alamofire
 
 class NetworkManager {
     
-    let shared = NetworkManager()
+    static let shared = NetworkManager()
     
     let characterListUrl = "https://rickandmortyapi.com/api/character"
     
