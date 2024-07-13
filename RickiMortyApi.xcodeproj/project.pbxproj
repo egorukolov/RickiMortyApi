@@ -16,6 +16,7 @@
 		5690F7892C410ABC008440F5 /* CharactersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5690F7882C410ABC008440F5 /* CharactersTableViewController.swift */; };
 		5690F78B2C410C00008440F5 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5690F78A2C410C00008440F5 /* Character.swift */; };
 		5690F78D2C410F12008440F5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5690F78C2C410F12008440F5 /* NetworkManager.swift */; };
+		569C9DD62C42A5D300DBE0F6 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569C9DD52C42A5D300DBE0F6 /* AlertManager.swift */; };
 		9896A3C4550C3C3B20AEF825 /* Pods_RickiMortyApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120F1571526AF6D38B203E21 /* Pods_RickiMortyApi.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		5690F7882C410ABC008440F5 /* CharactersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharactersTableViewController.swift; path = RickiMortyApi/Storyboards/CharactersTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		5690F78A2C410C00008440F5 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		5690F78C2C410F12008440F5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		569C9DD52C42A5D300DBE0F6 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		921FC03D902DE4491C988B8A /* Pods-RickiMortyApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickiMortyApi.debug.xcconfig"; path = "Target Support Files/Pods-RickiMortyApi/Pods-RickiMortyApi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,7 +91,7 @@
 				5690F7822C4109E1008440F5 /* ViewControllers */,
 				5690F7852C410A37008440F5 /* Storyboards */,
 				5690F7862C410A52008440F5 /* Models */,
-				5690F7872C410A72008440F5 /* NetworkManagers */,
+				5690F7872C410A72008440F5 /* Managers */,
 				5690F7842C410A02008440F5 /* SupportingFiles */,
 				5690F7832C4109F0008440F5 /* Sources */,
 			);
@@ -140,12 +142,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		5690F7872C410A72008440F5 /* NetworkManagers */ = {
+		5690F7872C410A72008440F5 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
 				5690F78C2C410F12008440F5 /* NetworkManager.swift */,
+				569C9DD52C42A5D300DBE0F6 /* AlertManager.swift */,
 			);
-			path = NetworkManagers;
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +271,7 @@
 				5690F7892C410ABC008440F5 /* CharactersTableViewController.swift in Sources */,
 				5690F78B2C410C00008440F5 /* Character.swift in Sources */,
 				5690F76F2C4109C9008440F5 /* AppDelegate.swift in Sources */,
+				569C9DD62C42A5D300DBE0F6 /* AlertManager.swift in Sources */,
 				5690F7712C4109C9008440F5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,16 +10,19 @@ import UIKit
 class CharactersTableViewController: UITableViewController {
     
     var characters: [Character] = []
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = "Rick and Morty Characters"
+        
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
         loadCharacters()
-       
+        
     }
     
-    func loadCharacters() {
+    private func loadCharacters() {
         NetworkManager.shared.fetchCharacters { [weak self] result in
             switch result {
             case .success(let characters):
@@ -28,27 +31,31 @@ class CharactersTableViewController: UITableViewController {
                     self?.tableView.reloadData()
                 }
             case .failure(let error):
-                break
+                self?.showError(error)
             }
         }
     }
-
+    
+    private func showError(_ error: Error) {
+        AlertManager.showAlert(on: self, title: "Error", message: error.localizedDescription)
+    }
+    
     // MARK: - Table view data source
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return characters.count
     }
-
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let character = characters[indexPath.row]
         cell.textLabel?.text = character.name
-
+        
         return cell
     }
-
+    
     
     // MARK: - Navigation
     
